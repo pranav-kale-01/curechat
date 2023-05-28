@@ -1,0 +1,162 @@
+/* reseting the margin and padding */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.cure-chat-tittle {
+    font-size: 24px;
+}
+
+.body{
+    font-family: 'Inter regular', sans-serif;;
+    background: rgb(134, 134, 240);
+}
+
+body {
+    height: 1;
+    background: white;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+.ar-header{
+    width: 100vw;
+    /* background-color: #E5F9DB; */
+    background-color: white;
+    color: black;
+    padding: 15px 10px;
+    color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.title{
+    /* background-color: #E5F9DB; */
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ar-body{
+    padding-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    padding: 10px;
+    height: 80vh;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+
+    /* Adds the items of the user to the last flex */
+    overflow-y: auto;
+    /* This is stops the code from overflowing out of the box */
+    overflow: auto;
+}
+
+.ar-input{
+    height: 60px;
+    display: flex;
+    padding: 0 13px;
+    align-items: center;
+}
+
+.myinput{
+    flex: 9;
+    /* The textbox is given maximum of the flexes */
+}
+
+.send{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 2px;
+    padding-left: 5px;
+}
+
+#user-input{
+    border-radius: 6px;
+    border: 1px solid #ababab;
+    padding: 20px 10px;
+    line-height: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.message-by-user{
+    /* background: #A0D8B3; */
+    background: #42a7f5;;
+    max-width: 80vw;
+    margin: 10px;
+    padding: 13px 15px;
+    border-radius: 28px 0 15px 28px;
+    font-size: 18px;
+}
+
+.message-by-bot{
+    align-self: flex-start;
+    /* background-color: #d5d6a3; */
+    background-color: #dbf1ff;
+    max-width: 80vw;
+    margin: 10px;
+    padding: 13px 15px;
+    border-radius: 0 28px 28px 15px;
+    font-size: 18px;
+}
+
+.message-by-user {
+    /* transform: translate(50%); */
+    animation: fade-in-right .3s ease-in-out both ;
+}
+
+.message-by-bot {
+    animation: fade-in-left;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: both;
+}
+
+.btn {
+    min-width: 80px;
+    padding: 20px 0;
+}
+
+
+
+@keyframes fade-in-right {
+    0%{
+        transform: translate(50%);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: (0%);
+        /* opacity: 1; */
+    }
+}
+
+@keyframes fade-in-left {
+    0%{
+        transform: translate(-50%);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: (0%);
+        /* opacity: 1; */
+    }
+}
+
+
